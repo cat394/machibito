@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Form from "../components/form/Form.svelte";
+import Spacer from "../components/spacer/Spacer.svelte";
+import Divider from "../components/divider/Divider.svelte";
+
+const title = "お問い合わせ";
+---
+
+<Layout title={title}>
+  <p>
+    本作品に対するコメントや誤字報告など、お気軽にお問い合わせ下さい。<br>
+    X（旧Twitter）のDMも開放しているため、そちらをお使いになられても構いません。<br>
+    いただいた情報は私以外の者と共有することはございませんので、ご安心ください。
+  </p>
+  <Divider />
+  <h2 class="text-center italic text-xl">Contact</h2>
+  <Spacer templates="low" />
+  <Form />
+</Layout>

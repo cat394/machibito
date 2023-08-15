@@ -1,0 +1,1 @@
+export type SpacerType = "low" | "middle" | "high";

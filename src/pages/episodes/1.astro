@@ -1,0 +1,50 @@
+---
+import StoryLayout from "../../layouts/StoryLayout.astro";
+import MediaWithSpacer from "../../components/media/MediaWithSpacer.svelte";
+import Spacer from "../../components/spacer/Spacer.svelte";
+import StorySpacer from "../../components/storySpacer/StorySpacer.svelte";
+import CharacterLine from "../../components/characterLine/CharacterLine.svelte";
+
+const episode = 1;
+---
+<StoryLayout episode={episode}>
+  <p>
+    俺は今日も、あの神社へと続く石段を登った。<br>
+    山の麓にあるそこには、一人の足跡が続くぐらいだ。<br>
+    <Spacer templates="low" />
+    ただ、どうしてだろうか、その足跡でさえ俺は見失ってしまう。<br>
+    <Spacer templates="low" />
+    その神社には誰もいない。荒れてしまった残骸が、取り残された過去だけが、ひどく夕陽に晒されている。
+  </p>
+  <MediaWithSpacer name="shrine_evening" />
+  <p>
+    俺は、向かって左の隅にある、木製のベンチへ向かい、そこに腰を下ろした。<br>
+    手提げの中を覗き込んだが、やはり、そこは空っぽであった。<br>
+    ここは煌々と照らされるには勿体ないほどに何もない。<br>
+    手提げに縛られた、色褪せたお守りが細やかに揺れている。
+  </p>
+  <StorySpacer innerContents={false}/>
+  <p>
+    しばらくすると、風は弱くなった。<br>
+    腰を持ち上げ、左手にある賽銭箱へと向かった。<br>
+  </p>
+  <Spacer templates="low" />
+  <p>
+    ポケットから硬貨を取り出し、そこへ放り入れる。
+  </p>
+  <MediaWithSpacer type="audio" name="osaisen" client:visible />
+  <p>
+    そして、そばにあった本坪鈴から垂れた紐を揺らし、その鈴を鳴らした。
+  </p>
+  <MediaWithSpacer type="audio" name="bell" client:visible />
+  <p>
+    後ろを振り向くと、蜜柑色の冷えた空が広がっていた。<br>
+  </p>
+  <MediaWithSpacer name="shrine_torii_evening" />
+  <CharacterLine>
+    『君は待っていてくれるのだろうか。』
+  </CharacterLine>
+  <p>
+    それから少し視線をそらした。
+  </p>
+</StoryLayout>
