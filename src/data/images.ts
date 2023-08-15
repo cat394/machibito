@@ -5,13 +5,7 @@ export const images: Images = {
   details:   
   [
     {
-      format: "png",
-      data: [
-        { name: "shrine_evening_with_girl", width: 400, height: 300, alt: "少女のいる夕暮れ時の神社" }
-      ]
-    },
-    {
-      format: "jpg",
+      format: "webp",
       data: [
         { name: "title-screen", width: 1000, height: 563, alt: "『待ち人』のタイトル画面" },
         { name: "shrine_evening", width: 400, height: 300, alt: "夕暮れ時の神社(正面)" },
@@ -25,7 +19,8 @@ export const images: Images = {
         { name: "shrine_torii_evening", width: 500, height: 281, alt: "神社の鳥居" },
         { name: "shrine_torii_evening_sepia", width: 500, height: 281, alt: "神社の鳥居(セピア)"},
         { name: "shrine_torii_evening_dark", width: 500, height: 281, alt: "神社の鳥居(夕闇)"},
-        { name: "rain", width: 484, height: 300, alt: "雨空" }
+        { name: "rain", width: 484, height: 300, alt: "雨空" },
+        { name: "shrine_evening_with_girl", width: 400, height: 300, alt: "少女のいる夕暮れ時の神社" }
       ]
     }
   ]
