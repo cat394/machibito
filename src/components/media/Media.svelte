@@ -8,19 +8,23 @@
   export let name = "";
   export let extraClass = "";
 
-  function getValidMediaCombinations<T extends { name: string }>(
+  function getValidMediaCombinations<T extends { name: string, width?: number, height?: number }>(
     mediaDetails: Detail<T>[],
     mediaType: MediaType
   ): {
     name: string;
     format: string;
     type: MediaType;
+    width?: number;
+    height?: number;
   }[] {
     return mediaDetails.flatMap((detail) =>
       detail.data.map((item) => ({
         name: item.name,
         format: detail.format,
         type: mediaType,
+        width: item.width,
+        height: item.height
       }))
     );
   }
@@ -41,6 +45,8 @@
     class="{extraClass}"
     src="{images.path}{currentMedia.name}.{currentMedia.format}"
     alt={name}
+    width={currentMedia.width}
+    height={currentMedia.height}
   />
   {:else if currentMedia.type === "audio"}
   <audio
