@@ -22,5 +22,29 @@ const content = "『待ち人』の作者、りょうへのお問い合わせフ
   <Spacer />
   <h2 class="text-center italic text-xl">Contact</h2>
   <Spacer templates="low" />
-  <Form />
+  <form class="grid gap-10" netlify data-netlify-honeypot="bot-field" name="feedback" method="POST">
+    <input type="hidden" name="form-name" value="feedback">
+    <label>
+      <div class="mb-3">お名前（ニックネーム可）：</div>
+      <input class="input input-bordered input-secondary w-full " name="name" placeholder="Type your name">
+    </label> 
+    <label>
+      <div class="mb-3">メールアドレス：</div> 
+      <input class="input input-bordered input-secondary w-full " name="email" placeholder="Type your email" type="email">
+    </label> 
+    <label>
+      <div class="mb-3">内容：</div> 
+      <textarea class="textarea textarea-secondary w-full h-[20vh] text-base pt-3" placeholder="Type your message" name="message" required></textarea>
+    </label> 
+    <p class="hidden">
+      <label>あなたが人間である場合は、これに記入しないでください: 
+        <input name="bot-field">
+      </label>
+    </p>
+    <div class="flex justify-center">
+      <button class="btn btn-wide btn-secondary text-neutral-50" type="submit">
+        送信する<span class="material-symbols-rounded">forward_to_inbox</span>
+      </button>
+    </div>
+  </form>
 </Layout>
