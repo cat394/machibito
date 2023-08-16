@@ -4,7 +4,7 @@ export type CreditData = {
   link: string;
 }
 
-export type Category = "Author" | "Support" | "Image" | "BGM" | "SE";
+export type Category = "Author" | "Support" | "Image" | "BGM" | "SE" | "プラグイン";
 
 export type CreditDetail = {
   category: Category;
@@ -51,6 +51,13 @@ export const credits: Credits = [
     data: [
       { name: "ポケットサウンド", materialNames: ["神社の本坪鈴の音"], link: "https://pocket-se.info/" },
       { name: "VSQ plus+", materialNames: ["雨8"], link: "https://vsq.co.jp/plus/" },
+    ]
+  },
+  {
+    category: "プラグイン",
+    data: [
+      { name: "脳硝子", link: "https://twitter.com/nekomilkcat" },
+      { name: "ねこの", link: "https://twitter.com/nekomilkcat" }
     ]
   }
 ]
