@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Form from "../components/form/Form.svelte";
 import Spacer from "../components/spacer/Spacer.svelte";
 import Divider from "../components/divider/Divider.svelte";
+import StickyNote from "../components/stickyNote/StickyNote.svelte";
 
 const title = "お問い合わせ";
 const content = "『待ち人』の作者、りょうへのお問い合わせフォームです。作品へのコメント、誤字の報告など、どんなご意見もお気軽にお寄せください。";
@@ -15,6 +16,10 @@ const content = "『待ち人』の作者、りょうへのお問い合わせフ
     いただいた情報は私以外の者と共有することはございませんので、ご安心ください。
   </p>
   <Divider />
+  <StickyNote type="warn">
+    <p>現在（2023/08/16）、フォームが機能しない不具合が発生しているため、何か用事がありましたらお手数ですがページ下部のリンクのSNSアカウントよりご連絡ください。</p>
+  </StickyNote>
+  <Spacer />
   <h2 class="text-center italic text-xl">Contact</h2>
   <Spacer templates="low" />
   <Form />
