@@ -6,8 +6,9 @@
 
 <form 
   class="grid gap-10" 
-  name="contact" 
-  netlify
+  name="contact"
+  method="POST"
+  data-netlify="true"
 >
   <Input 
     type="name" 
