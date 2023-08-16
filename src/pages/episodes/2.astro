@@ -5,8 +5,9 @@ import StorySpacer from "../../components/storySpacer/StorySpacer.svelte";
 import CharacterLine from "../../components/characterLine/CharacterLine.svelte";
 
 const episode = 2;
+const content = "『待ち人』2日目。私は彼らの前に姿を現すことにした。ただ私は彼らに打ち明けることはない、それは決まりだから。"
 ---
-<StoryLayout episode={episode}>
+<StoryLayout episode={episode} content={content}>
   <p>
     今日もまた神社の石段へと足をかけた。<br>
     日に日に、随分と足が鈍くなっている。<br>
@@ -28,7 +29,7 @@ const episode = 2;
     突き付けられた気がした。<br>
     何も変わらない日々に安堵していたことを自覚させられた。<br>
     用意していたはずの何かが、全て白紙へと返された。
-  <StorySpacer innerContents={false}/>
+  <StorySpacer innerContents={false} />
   <p>
     散々の末、俺は何を考えることもなく、彼女のいるベンチへと向かうことにした。
   </p>

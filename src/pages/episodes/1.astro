@@ -6,8 +6,9 @@ import StorySpacer from "../../components/storySpacer/StorySpacer.svelte";
 import CharacterLine from "../../components/characterLine/CharacterLine.svelte";
 
 const episode = 1;
+const content = "『待ち人』1日目。最後の参拝者に私が出来ることは何だろうか。それをずっと考え続けていた。"
 ---
-<StoryLayout episode={episode}>
+<StoryLayout episode={episode} content={content}>
   <p>
     俺は今日も、あの神社へと続く石段を登った。<br>
     山の麓にあるそこには、一人の足跡が続くぐらいだ。<br>
@@ -23,7 +24,7 @@ const episode = 1;
     ここは煌々と照らされるには勿体ないほどに何もない。<br>
     手提げに縛られた、色褪せたお守りが細やかに揺れている。
   </p>
-  <StorySpacer innerContents={false}/>
+  <StorySpacer innerContents={false} />
   <p>
     しばらくすると、風は弱くなった。<br>
     腰を持ち上げ、左手にある賽銭箱へと向かった。<br>
@@ -32,11 +33,11 @@ const episode = 1;
   <p>
     ポケットから硬貨を取り出し、そこへ放り入れる。
   </p>
-  <MediaWithSpacer type="audio" name="osaisen" client:visible />
+  <MediaWithSpacer type="audio" name="osaisen" client:load />
   <p>
     そして、そばにあった本坪鈴から垂れた紐を揺らし、その鈴を鳴らした。
   </p>
-  <MediaWithSpacer type="audio" name="bell" client:visible />
+  <MediaWithSpacer type="audio" name="bell" client:load />
   <p>
     後ろを振り向くと、蜜柑色の冷えた空が広がっていた。<br>
   </p>

@@ -7,11 +7,12 @@ import CommonHead from './CommonHead.astro';
 
 type Props = {
   title: string;
+	content: string;
 }
 
-const { title } = Astro.props;
+const { title, content } = Astro.props;
 ---
-<CommonHead title={`待ち人｜${title}`} />
+<CommonHead title={`待ち人｜${title}`} content={content} />
 	<body class="flex flex-col min-h-screen">
 		<Header title={title} />
 		<Navigation client:load />
