@@ -23,6 +23,6 @@
 <style>
   .my-hero {
     background-image: url("/assets/images/title-screen.webp");
-    aspect-ratio: 400 / 225;
+    aspect-ratio: 1000 / 563;
   }
 </style>
