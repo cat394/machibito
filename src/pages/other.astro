@@ -7,7 +7,7 @@ import GuideLinkButton from "../components/linkButton/GuideLinkButton.svelte";
 import Divider from "../components/divider/Divider.svelte";
 
 const title = "その他";
-const content = "『待ち人』の作者のあとがきや、ウェブサイト更新へのお知らせ欄があります。"
+const content = "あとがきや、ウェブサイト更新へのお知らせ欄があります。"
 ---
 
 <Layout title={title} content={content}>
@@ -17,7 +17,7 @@ const content = "『待ち人』の作者のあとがきや、ウェブサイト
     </p>
   </StickyNote>
   <Spacer />
-  <h3 class="text-xl">あとがき：</h3>
+  <h2 class="text-xl">あとがき：</h2>
   <Spacer templates="low" />
   <figure>
     <p>
@@ -29,7 +29,7 @@ const content = "『待ち人』の作者のあとがきや、ウェブサイト
     <figcaption class="text-right">作者より</figcaption>
   </figure>
   <Divider />
-  <h3 class="text-xl">お知らせ：</h3>
+  <h2 class="text-xl">お知らせ：</h2>
   <Spacer templates="low" />
   <News />
   <Spacer templates="high" />

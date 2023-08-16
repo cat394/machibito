@@ -22,9 +22,9 @@
       <div 
         class="flex justify-between items-center py-3 px-5"
       >
-        <h1 class="text-neutral-50">
+        <span class="text-neutral-50">
           待ち人
-        </h1>
+        </span>
         <button 
           class="flex items-center" 
           on:click={handleClick}

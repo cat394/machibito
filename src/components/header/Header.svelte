@@ -9,10 +9,10 @@
   <div 
     class="md:flex md:justify-between items-center"
   >
-    <h1 class="hidden md:block">待ち人</h1>
-    <h2 class="text-center md:hidden">{title}</h2>
+    <span class="hidden md:block">待ち人</span>
+    <h1 class="text-center md:sr-only">{title}</h1>
     <div class="hidden md:block">
-      <HeaderLinks />    
+      <HeaderLinks />
     </div>
   </div>
 </header>
