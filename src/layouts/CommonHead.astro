@@ -13,6 +13,7 @@ const { title, content } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={content} />
+    <title>{title}</title>
     <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon_package/apple-touch-icon.png">
     <link rel="android-chrome" sizes="96x96" href="/assets/favicon_package/android-chrome-96x96.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_package/favicon-32x32.png">
@@ -22,7 +23,7 @@ const { title, content } = Astro.props;
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>{title}</title>
+    
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
