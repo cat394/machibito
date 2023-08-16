@@ -7,7 +7,7 @@
   {#each credits as creditDetail}
   <div>
     <h3 
-      class="border-l-2 border-l-[white] border-solid p-2 mb-4"
+      class="border-l-2 border-l-[hsl(var(--s))] border-solid p-2 mb-4"
     >
       {creditDetail.category}
     </h3>
