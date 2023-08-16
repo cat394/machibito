@@ -6,12 +6,9 @@
 
 <form 
   class="grid gap-10" 
-  netlify 
-  data-netlify-honeypot="bot-field" 
-  name="feedback" 
-  method="POST"
+  action="https://ssgform.com/s/fmGjPCLMYoFD"
+  method="post"
 >
-  <input type="hidden" name="form-name" value="feedback" />
   <Input 
     type="name" 
     fieldName="お名前（ニックネーム可）" 
@@ -23,11 +20,6 @@
     name="email" 
   />
   <Textarea fieldName="内容" />
-  <p class="hidden">
-    <label>
-      あなたが人間である場合は、これに記入しないでください: <input name="bot-field" />
-    </label>
-  </p>
   <div class="flex justify-center">
     <SubmitButton />
   </div>
