@@ -22,7 +22,7 @@
 
 <style>
   .my-hero {
-    background-image: url("/assets/images/title-screen.webp");
+    background-image: url("https://res.cloudinary.com/machibito/image/upload/f_auto,q_auto,c_scale/v1692327434/title_screen_oyu0c5.jpg");
     aspect-ratio: 1000 / 563;
   }
 </style>
