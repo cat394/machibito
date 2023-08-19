@@ -29,7 +29,7 @@
         />
         {/if}
         <div 
-          class="flex flex-col md:flex-row"
+          class="flex flex-col md:flex-row md:gap-3"
         >
           <p>{newsYear.year}.{newsMonth.month}.{newsDay.day}</p>
           <p>{newsDay.summary}</p>
