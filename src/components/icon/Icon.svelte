@@ -7,7 +7,7 @@
 <span class="material-symbols-{type} {extraClass}">{name}</span>
 
 <style>
-  .material-symbols-rounded {
+.material-symbols-rounded {
     font-variation-settings:
     'FILL' 0,
     'wght' 240,
