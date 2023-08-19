@@ -9,6 +9,7 @@
 <style>
 
 .material-symbols-rounded {
+    font-display: swap;
     font-variation-settings:
     'FILL' 0,
     'wght' 240,
