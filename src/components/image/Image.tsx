@@ -17,10 +17,9 @@ const Image: React.FC<ImageProps> = ({ name }) => {
   }
 
   const imagePath = `${result.category.path}${result.detail.name}_${result.detail.id}`;
-  console.log(imagePath);
   const myImage = cld.image(imagePath);
 
-  return <div className='mb-[1.25rem]'>
+  return <div className='my-[1.25rem]'>
     <AdvancedImage cldImg={myImage} alt={result.detail.alt} />
   </div>;
 }
