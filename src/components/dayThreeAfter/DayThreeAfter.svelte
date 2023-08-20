@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount, tick } from "svelte";
+  import { onMount } from "svelte";
   import Spacer from "../spacer/Spacer.svelte";
   import Textarea from "../form/Textarea.svelte";
   import CharacterLine from "../characterLine/CharacterLine.svelte";
@@ -13,16 +13,6 @@
 
     if (zeroDaySaw) {
       show = true;
-    }
-
-    await tick();
-    
-    if (zeroDaySaw && !scrolled) {
-      const mainElement = document.querySelector("main") as HTMLElement;
-  
-      mainElement.scrollTop = mainElement.scrollHeight;
-      
-      localStorage.setItem("scrolled", "true");
     }
   });
 </script>
