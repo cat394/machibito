@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
-  onMount(async() => {
+  onMount(() => {
     const zeroDaySaw = localStorage.getItem("zeroDaySaw");
 
     if (!zeroDaySaw) {

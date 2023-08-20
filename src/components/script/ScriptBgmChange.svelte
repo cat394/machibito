@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
-  onMount(async() => {
+  onMount(() => {
 		function stopOtherAudio(currentAudio: HTMLAudioElement) {
     	audioElements.forEach((audio: HTMLAudioElement) => {
         if (!audio.src.endsWith("omoiwoidaite.mp3") && currentAudio.src.endsWith("omoiwoidaite.mp3")) {
@@ -15,7 +15,7 @@
 		audioElements.forEach((audio: HTMLAudioElement) => {
 			console.log(audio)
 				audio.addEventListener("play", () => {
-						stopOtherAudio(audio);
+					stopOtherAudio(audio);
 			})
 		});
 	})
