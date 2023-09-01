@@ -1,6 +1,0 @@
-This is a Brave Creators publisher verification file.
-
-Domain: machibito.app
-Token: 236cca31304530106fa4c4b084db956e58ea06a7cbac6c592cd68e9946e9e65b
-
-
