@@ -9,6 +9,5 @@ export const navigationLinks: Links = [
   { to: "/", text:"ホーム"},
   { to: "/story/", text: "ストーリー" },
   { to: "/credit/", text: "クレジット" },
-  { to: "/other/", text: "その他"},
-  { to: "/contact/", text: "お問い合わせ"}
+  { to: "/other/", text: "その他"}
 ]

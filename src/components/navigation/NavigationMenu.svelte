@@ -12,7 +12,7 @@
 </script>
 
 <nav
-  class="my-navigation-menu h-[70dvh] w-full fixed left-0 bottom-[-70dvh] p-5 transition-all duration-[1s] z-[1000] bg-[black] opacity-[0.87] border-t-2 border-solid border-t-[#FF57B6] rounded-t-[30px]"
+  class="my-navigation-menu h-[60dvh] w-full fixed left-0 bottom-[-60dvh] p-5 transition-all duration-[1s] z-[1000] bg-[black] opacity-[0.87] border-t-2 border-solid border-t-[#FF57B6] rounded-t-[30px]"
   class:open
 >
   <div class="flex justify-between items-center mb-5">
@@ -24,6 +24,6 @@
 
 <style>
   .my-navigation-menu.open {
-    translate: 0 -70dvh;
+    translate: 0 -60dvh;
   }
 </style>
