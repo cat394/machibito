@@ -7,7 +7,6 @@ export const images: Images = {
     {
       format: "webp",
       data: [
-        { name: "title-screen", width: 1000, height: 563, alt: "『待ち人』のタイトル画面" },
         { name: "shrine_evening", width: 400, height: 300, alt: "夕暮れ時の神社(正面)" },
         { name: "shrine_evening_sepia", width: 400, height: 300, alt: "夕暮れ時の神社(正面かつセピア)" },
         { name: "shrine_evening_diagonal", width: 400, height: 300, alt: "夕暮れ時の神社(斜め)" },
