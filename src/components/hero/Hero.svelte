@@ -1,13 +1,17 @@
 <script>
   import LinkButton from "../linkButton/LinkButton.svelte";
   import Icon from "../icon/Icon.svelte";
-  import titleScreen from "../../assets/title_screen.jpg";
 </script>
 
 <div 
   class="relative shadow-[inset_0_0_15.5px_3.5px_#d4d4d4]"
 >
-  <img src={titleScreen.src} alt="待ち人のタイトルスクリーン" />
+  <picture>
+    <source srcset="/assets/images/title_screen.jpg" media="(min-width: 1000px)" />
+    <source srcset="/assets/images/title_screen_sm.jpg" media="(max-width: 768px)" />
+    <source srcset="/assets/images/title_screen_md.jpg" media="(max-width: 999px)" />
+    <img src="/assets/images/title_screen.jpg" alt="待ち人のタイトルスクリーン"/>
+  </picture>
   <div 
     class="absolute bottom-[12px] left-[12px] opacity-80"
   >
