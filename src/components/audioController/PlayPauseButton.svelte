@@ -18,7 +18,7 @@
 </script>
 
 <button class="grid place-items-center {active ? 'active' : ''}" on:click={handleClick}>
-  <Icon name={iconName} extraClass="hover:text-[hsl(var(--p))] transition-all duration-300" />
+  <Icon name={iconName} extraClass="hover:text-[oklch(var(--p))] transition-all duration-300" />
 </button>
 
 <style>
