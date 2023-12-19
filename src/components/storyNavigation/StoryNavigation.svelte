@@ -10,7 +10,7 @@
 <nav
   class="absolute bottom-0 left-0 w-full grid grid-cols-[repeat(3,minmax(max-content,1fr))] bg-[black] border-t border-neutral-500"
 >
-  {#if episode === 0}
+  {#if episode === 1}
   <div></div>
   {:else}
   <StoryNavigationButton
@@ -23,7 +23,7 @@
   <StoryNavigationButton 
     to="/story" 
     text="物語を閉じる"
-    style="border: 1px solid hsl(var(--p)); border-top: none; border-bottom: none;"
+    style="border: 1px solid oklch(var(--p)); border-top: none; border-bottom: none;"
   />
   {#if episode === 0 || episode === 4}
   <div></div>
