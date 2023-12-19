@@ -1,0 +1,36 @@
+---
+import StoryNavigation from "../components/storyNavigation/StoryNavigation.svelte";
+import AudioController from "../components/audioController/AudioController.svelte";
+import CommonHead from './CommonHead.astro';
+
+type Props = {
+  episode: number;
+	content: string;
+}
+
+const { episode, content } = Astro.props;
+---
+<CommonHead title={`ストーリー | ${episode}日目`} content={content} />
+	<body class="h-[100vh]">
+    <header 
+			class="sticky w-ful z-[90] top-0 p-3 px-5 md:px-8 border-b border-solid border-neutral-500 bg-neutral-900"
+		>
+			<div class="grid items-center grid-cols-[auto_1fr] gap-5">
+				<h1>{episode}日目</h1>
+				<div class="justify-self-end opacity-80">
+					{episode === 3 ? (
+							<AudioController name="autumngarden_with_rain" loop={true} client:load />
+					) : episode === 0 ? (
+							<AudioController name="unforgettable_dream_tale" loop={true} client:load />
+					) : (
+							<AudioController name="autumngarden" loop={true} client:load />
+					)}
+				</div>
+			</div>
+    </header>
+		<StoryNavigation episode={episode} />
+		<main class="text-sm md:text-base mx-auto px-[1em] py-10 w-[88%] h-[80dvh] max-w-[1000px] flex-1 overflow-auto md:leading-loose">
+			<slot />
+		</main>
+  </body>
+</CommonHead>

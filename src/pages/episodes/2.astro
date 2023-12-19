@@ -1,0 +1,53 @@
+---
+import StoryLayout from "../../layouts/StoryLayout.astro";
+import MediaWithSpacer from "../../components/media/MediaWithSpacer.svelte";
+import StorySpacer from "../../components/storySpacer/StorySpacer.svelte";
+import CharacterLine from "../../components/characterLine/CharacterLine.svelte";
+
+const episode = 2;
+const content = "『待ち人』2日目。私は彼らの前に姿を現すことにした。ただ私は彼らに打ち明けることはない、それは決まりだから。"
+---
+<StoryLayout episode={episode} content={content}>
+  <p>
+    今日もまた神社の石段へと足をかけた。<br>
+    日に日に、随分と足は鈍くなり、道中に何度となく振り返った。<br>
+    そんな惨めな姿を晒してくるかのような光も好きではない。
+  </p>
+  <StorySpacer>
+    <p>
+      それでも、あの時、彼女に言わなくてはならないことがあったことを思い返すたびに、また寄ってしまう。
+    </p>
+  </StorySpacer>
+  <p>
+    そうして、俺はようやく最上段まで登り着き、いつものベンチへと、いつものように視線を移した。
+  </p>
+  <MediaWithSpacer name="shrine_evening_with_girl" />
+  <p>
+    しかし、そこには一人の少女が座っていた、、<br>
+    俺はそれに気づいた瞬間から急に怖くなって、途端に逃げ出してしまいそうにもなって、一歩下がった。<br>
+    突き付けられた気がした。<br>
+    何も変わらない今日に安堵していたことを自覚した。<br>
+    用意していたはずの何かは、全て白紙へと返された。
+  <StorySpacer innerContents={false} />
+  <p>
+    散々の末、俺は何を考えることもなく、彼女のいるベンチへと向かうことにした。
+  </p>
+  <MediaWithSpacer name="shrine_evening_diagonal" />
+  <p>
+    そこは申し分ないほど、きれいに空けられていたにもかかわらず、きまり悪く、ゆっくりと座った。<br>
+    彼女はこちらに気付いた様子はない。ただ遠くを見つめている。<br>
+    聞こえてくるのは、カラカラと、枯葉が弱く床を転がる音だけであった。
+  </p>
+  <MediaWithSpacer name="shrine_night_diagonal" />
+  <p>
+    辺りは既に暗くなり、ふと隣を見ると、そこにいた彼女の姿は消えていた。<br>
+  </p>
+  <CharacterLine>
+    「はぁ。」
+  </CharacterLine>
+  <p>
+    今更ながらの徒労から出てきたのは、みっともない、ため息である。<br>
+    俺は立ち上がり、そのまま階段へと足を引きずる。<br>
+    その視界は、いつにも増して、どんよりとした雲で覆われていた。
+  </p>
+</StoryLayout>

@@ -1,0 +1,183 @@
+---
+import StoryLayout from "../../layouts/StoryLayout.astro";
+import MediaWithSpacer from "../../components/media/MediaWithSpacer.svelte";
+import Divider from "../../components/divider/Divider.svelte";
+import Spacer from "../../components/spacer/Spacer.svelte";
+import StoryGuideLinkButton from "../../components/linkButton/StoryGuideLinkButton.svelte";
+import StorySpacer from "../../components/storySpacer/StorySpacer.svelte";
+import ScriptBgmChange from "../../components/script/ScriptBgmChange.svelte";
+import CharacterLine from "../../components/characterLine/CharacterLine.svelte";
+
+const episode = 4;
+const content = "『待ち人』4日目。彼らの願いを成就し、私は最後の役割を果たし、その役目を終了した。去り際に、彼らの持っていたそれに触れると、とても胸が暖かくなった。"
+---
+<StoryLayout episode={episode} content={content}>
+	<p>
+		ふと、閉じられた目の隙間から差し込む光に、俺の意識は再生した。
+	</p>
+	<MediaWithSpacer name="shrine_evening_diagonal" />
+	<CharacterLine name="girl">
+		「あー！やっと起きたんだ。」
+	</CharacterLine>
+	<p>
+		そこに、懐かしく聞きなじみのある、甲高い声が聴こえてきた。
+	</p>
+	<Spacer templates="low" />
+	<p>
+		俺は、その元である正面へと、ぼやけていた視界を明瞭にする。
+	</p>
+	<StorySpacer innerContents={false} />
+	<p>
+		するとそこに、彼女の姿が映ると、途端に景色が淡く滲みだした。
+	</p>
+	<CharacterLine name="girl">
+		「ちょっと、なんで急に泣き出しているのよ！？」
+	</CharacterLine>
+	<CharacterLine>
+		「俺は、お前をずっと待っていて、それで今、お前が目の前にいて、それが間違いじゃなかったって分かったから・・・」
+	</CharacterLine>
+	<p>
+		裏返されたそこには、とめどない何かで溢れていた。
+	</p>
+	<CharacterLine>
+		「そっか、」
+	</CharacterLine>
+	<p>
+		彼女は後ろへ振り向き、空を仰いでいた。
+	</p>
+	<StorySpacer innerContents={false} />
+	<p>
+		しばらくして落ち着くと、彼女は俺の隣に座り、手提げを一瞥した。
+	</p>
+	<CharacterLine>
+		「そういえば、私があげた御守り、ちゃんと持っていたんだね。」
+	</CharacterLine>
+	<CharacterLine>
+		「まぁな。」
+	</CharacterLine>
+	<CharacterLine name="girl">
+		「私も、それとお揃いのを持っているんだよ、ほら。」
+	</CharacterLine>
+	<p>
+		彼女が左ポケットの中をまさぐり、取り出したそれも一緒のモノであった。
+	</p>
+	<CharacterLine name="girl">
+		「実は、私も待っていたんだ。もう会えないだろうって、待っていることに意味がない事も知っていたはずなのに、あの夕暮れだけは忘れずにいた。」
+	</CharacterLine>
+	<p>
+		正面のどこか遠くを見つめた様子で彼女はそう語った。
+	</p>
+	<CharacterLine>
+		「俺もそうだったよ。それを悟るのが怖くて、逃げてばかりだった。」
+	</CharacterLine>
+	<CharacterLine name="girl">
+		「でも、今はもう違うけどね。だってこうして－」
+	</CharacterLine>
+	<Spacer templates="low" />
+	<CharacterLine name="girl">
+		『私は、あんたに会えて良かったって思えたから。』
+	</CharacterLine>
+	<CharacterLine>
+		『俺は、お前に会えて良かったって思えたから。』
+	</CharacterLine>
+	<Divider />
+	<MediaWithSpacer name="shrine_torii_evening" />
+	<p>
+		彼女と手を繋ぎながら、山際へと次第に落ちていくそれを、石階段に座りながら眺める。
+	</p>
+	<CharacterLine>
+		「あの日と変わらず、ここは眩しいな。」
+	</CharacterLine>
+	<CharacterLine name="girl">
+		「うん、、そう、だね。」
+	</CharacterLine>
+	<CharacterLine>
+		「どうかしたのか？」
+	</CharacterLine>
+	<p>
+		そう尋ねると、突然、彼女は俺の方に身を乗り出してきた。
+	</p>
+	<CharacterLine name="girl">
+		「本当は、、」
+	</CharacterLine>
+	<p>
+		彼女は一呼吸を置き、顔を見合わせて、
+	</p>
+	<MediaWithSpacer type="audio" name="omoiwoidaite" loop={true} client:load />
+	<CharacterLine name="girl">
+		「私はもっと、あんたと一緒にいたい！我儘で、自分勝手な願いだってことは分かってる！それでも、この時間が終わってしまうのが嫌だから！だって、私は・・・」
+	</CharacterLine>
+	<p>
+		溜まっていたのだろう想いを、切々と掃き出した。
+	</p>
+	<StorySpacer innerContents={false} />
+	<CharacterLine>
+		「今の俺にも、あの時お前が言っていたことが分かる気がするよ。」
+	</CharacterLine>
+	<CharacterLine name="girl">
+		「え？」
+	</CharacterLine>
+	<CharacterLine>
+		「夕日が沈む姿を見るのはどこか寂しい、それは明日も変わらずに昇ると知っていても。俺も、今のこの景色が長く続いてくれたらって、そう思えるよ。」
+	</CharacterLine>
+	<CharacterLine name="girl">
+		「しばらく見ないうちに、生意気になったんじゃないの？」
+	</CharacterLine>
+	<p>
+		握られた手に隙間はなくなり、力がこもる。
+	</p>
+	<CharacterLine>
+		「そうかもしれない。でも、だからこそ言えるよ、」
+	</CharacterLine>
+	<p>
+		彼女は涙を拭うと、目を合わせた。
+	</p>
+	<CharacterLine>
+		「お前が好きだ。」
+	</CharacterLine>
+	<CharacterLine name="girl">
+		「うん・・私も、君が好きだよ。」
+	</CharacterLine>
+	<p>
+		俺も彼女の手をそっと力強く握り返す。
+	</p>
+	<p>
+		頬を伝う雨粒は零れ、溢れていく中で、それは反射していた。
+	</p>
+	<Divider />
+	<MediaWithSpacer name="shrine_torii_evening_dark" />
+	<p>
+		おれんじ色に包まれていた光景が、いつの間にか暗がりへと傾き始めている。
+	</p>
+	<CharacterLine name="girl">
+		「もう手は放してくれていいよ。」
+	</CharacterLine>
+	<CharacterLine>
+		「そうか。」
+	</CharacterLine>
+	<p>
+		俺が手を放すと、彼女は立ち上がった。
+	</p>
+	<CharacterLine name="girl">
+		「私は一人じゃないって分かった。それだけで、きっと前（さき）に進めるはずだから。それだけ、なんて贅沢過ぎるほどで、ロクに表現さえも思いつかないや。」
+	</CharacterLine>
+	<CharacterLine>
+		「そうだな。俺も大切な用事を伝えられたから、きっと迷わずに歩むことができる。」
+	</CharacterLine>
+	<p>
+		立ち上がると、最期のあの光が俺たちの合間に射し込んだ。
+	</p>
+	<CharacterLine>
+		「ありがとう、私を待っていてくれて。」
+	</CharacterLine>
+	<CharacterLine>
+		「こちらこそ、ありがとう。」
+	</CharacterLine>
+	<p>
+		そうして、俺たちの影は、暖かに夕焼けた空と共に、その姿を沈ませたのであった。
+	</p>
+	<Spacer />
+	<StoryGuideLinkButton to="/credit">クレジットへ</StoryGuideLinkButton>
+	<Spacer />
+	<ScriptBgmChange client:only />
+</StoryLayout>

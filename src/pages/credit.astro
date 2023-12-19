@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Credits from "../components/credits/Credits.svelte";
+import Spacer from "../components/spacer/Spacer.svelte";
+import GuideLinkButton from "../components/linkButton/GuideLinkButton.svelte";
+import Divider from "../components/divider/Divider.svelte";
+
+const title = "クレジット";
+const content = "作者、サポーター、素材の提供者様たちのクレジット表記が記載されています。ゲームでのみ使用した素材や、ウェブサイトでのみ使用した素材もあります。"
+---
+
+<Layout title={title} content={content}>
+  <p>
+    本作品(ゲーム版含む)のクレジットになります。<br>
+    素材は全てフリーで公開されており、リンクも掲載しているため宜しければ訪れてみてください。<br>
+    サポートしてくれた方や素材の提供者様の方々には感謝致します。
+  </p>
+  <Divider />
+  <Credits />
+  <Spacer templates="high" />
+  <GuideLinkButton to="/other">その他ページへ</GuideLinkButton>
+</Layout>

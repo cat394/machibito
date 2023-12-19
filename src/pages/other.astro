@@ -1,0 +1,36 @@
+---
+import Layout from "../layouts/Layout.astro";
+import StickyNote from "../components/stickyNote/stickyNote.svelte";
+import News from "../components/news/News.svelte";
+import Spacer from "../components/spacer/Spacer.svelte";
+import GuideLinkButton from "../components/linkButton/GuideLinkButton.svelte";
+import Divider from "../components/divider/Divider.svelte";
+
+const title = "その他";
+const content = "あとがきや、ウェブサイト更新へのお知らせ欄があります。"
+---
+
+<Layout title={title} content={content}>
+  <StickyNote type="attention">
+    <p>
+      このページは物語を読み終えた方向けに書かれております。まだ作品をご覧になっていない方は、ぜひご覧いただければ幸いです。
+    </p>
+  </StickyNote>
+  <Spacer />
+  <h2 class="text-xl">あとがき：</h2>
+  <Spacer templates="low" />
+  <figure>
+    <p>
+      さて、物語はいかがでしたでしょうか。何か一つでも心に残るものがあったのなら、嬉しく思います。<br>
+      もし誤字や当ウェブサイトに関するその他の問題を発見された場合は、お問い合わせフォームか、フッターに掲載してあるリンクからSNSアカウントを通じてご連絡ください。<br>
+      これはノベルゲームコレクションというサイトで、ゲームとして楽しむこともできます。<br>
+      現在、第二作目となる作品に向けても色々やっているので、次回またお会いできるのを楽しみにしております。
+    </p>
+    <figcaption class="text-right">作者より</figcaption>
+  </figure>
+  <Divider />
+  <h2 class="text-xl">お知らせ：</h2>
+  <Spacer templates="low" />
+  <News />
+  <Spacer templates="high" />
+</Layout>

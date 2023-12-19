@@ -1,0 +1,45 @@
+---
+import HeadIcons from "../components/head/HeadIcons.astro";
+import HeadOgTags from "../components/head/HeadOgTags.astro";
+import { ViewTransitions } from 'astro:transitions';
+
+type Props = {
+  title: string;
+  content: string;
+}
+const { title, content } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="ja" data-theme="dracula" class="bg-[#030303] font-serif">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={content} />
+    <title>{title}</title>
+    <HeadIcons />
+    <HeadOgTags />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "CreativeWork",
+        "name": "待ち人",
+        "author": {
+          "@type": "Person",
+          "name": "りょう"
+        },
+        "description": "『伝え忘れてしまった想いが、あなたにはありますか？』もうやってこないだろうあの日に待ち続ける2人の影がいた。夕焼け空に鈴の音が響くとき、彼らの運命は彷徨い始める。あのときの想いが、言葉が、幻想的な世界の背景で錯綜する。文章と画像と曲が混ざり合い、織り成される、ビジュアルノベル風ウェブサイト。",
+        "datePublished": "2023-08-15",
+        "url": "https://machibito.app/",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://machibito.app/assets/images/title_screen_md.webp",
+          "height": 563,
+          "width": 1000
+        }
+      }
+    </script>
+    <ViewTransitions />
+  </head>
+  <slot />
+</html>

@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/hero/Hero.svelte";
+import Spacer from "../components/spacer/Spacer.svelte";
+import Divider from "../components/divider/Divider.svelte";
+import MediaWithSpacer from "../components/media/MediaWithSpacer.svelte";
+import StickyNote from "../components/stickyNote/stickyNote.svelte";
+import GuideLinkButton from "../components/linkButton/GuideLinkButton.svelte";
+
+const title = "ホーム";
+const content = "『伝え忘れてしまった想いが、あなたにはありますか？』もうやってこないだろうあの日に待ち続ける2人の影がいた。夕焼け空に鈴の音が響くとき、彼らの運命は彷徨い始める。あのときの想いが、言葉が、幻想的な世界の背景で錯綜する。文章と画像と曲が混ざり合い、織り成される、ビジュアルノベル風ウェブサイト。";
+---
+
+<Layout title={title} content={content}>
+  <Hero />
+  <Spacer />
+  <p>
+    あの日、彼女は言った、<br>
+    「またね」と。<br>
+    遠く離れていく過去に、俺は待つ。
+  </p>
+  <Divider />
+  <p>
+    今日もまた、夕暮れの時間になった。<br>
+    俺は荷物を持ち、あそこへと向かった。
+  </p>
+  <MediaWithSpacer type="image" name="shrine_evening" />
+  <p>
+    ここは以前、縁結びの神社として栄えていたそうだが、今やもう、俺を除いて人はいない。<br>
+    手入れは行き届いておらず、枯葉は無造作にちりばめられ、静けさだけが残る。
+  </p>
+  <Spacer templates="high" />
+  <MediaWithSpacer type="image" name="shrine_night_step" />
+  <p>
+    その日はもうやってこないことを知っている。進む足だって鈍くなる一方で、弱くて矛盾ばかりで仕方ない。<br>
+    それでも、なぜだろうか、淡い思いだけは失われずにいた。
+  </p>
+  <Spacer templates="high" />
+  <div class="flex justify-center">
+    <StickyNote>
+      <figure>
+        <p>
+          幻想的な世界の中にある、ほんの一握りの甘酸っぱさをテーマとしたストーリーとなっております。<br>
+          文章だけでなく作品の雰囲気に合った画像やオーディオも提供しているため、没入感もあると思います。
+        </p>
+        <figcaption class="text-right mt-4">作者：りょう</figcaption>
+      </figure>
+    </StickyNote>
+  </div>
+  <Spacer templates="high" />
+  <GuideLinkButton to="/story">ストーリーページへ</GuideLinkButton>
+  <Spacer templates="high" />
+</Layout>

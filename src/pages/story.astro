@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Spacer from "../components/spacer/Spacer.svelte";
+import Chapters from "../components/chapters/Chapters.svelte";
+import GuideLinkButton from "../components/linkButton/GuideLinkButton.svelte";
+import Divider from "../components/divider/Divider.svelte";
+
+const title = "ストーリー";
+const content = "『待ち人』の物語一覧です。それぞれのリンクをクリックするとストーリーページへ飛ぶことができます。";
+---
+
+<Layout title={title} content={content}>
+  <h2 class="text-xl mb-3">前書き：</h2>
+  <p>
+    この物語は20分ほどで読み終わる文量となっておりますので、よければ最後までご覧いただければ幸いです。<br>
+    BGMやSEも配置してあるため、イヤホンやヘッドホンをしながら楽しんでいただけると、より深く物語を味わうことができます。
+  </p>
+  <Divider />
+  <Chapters />
+  <Spacer templates="high" />
+  <GuideLinkButton to="/credit">クレジット一覧へ</GuideLinkButton>
+</Layout>
