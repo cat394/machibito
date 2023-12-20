@@ -6,7 +6,7 @@ import StorySpacer from "../../components/storySpacer/StorySpacer.svelte";
 import CharacterLine from "../../components/characterLine/CharacterLine.svelte";
 
 const episode = 1;
-const content = "『待ち人』1日目。最後の参拝者に私が出来ることは何だろうか。それをずっと考え続けていた。"
+const content = "『待ち人』1日目。最後の参拝者に私が出来ることは何だろうか。私はそれをずっと考え続けていた。"
 ---
 <StoryLayout episode={episode} content={content}>
   <p>
@@ -19,14 +19,13 @@ const content = "『待ち人』1日目。最後の参拝者に私が出来る�
   </p>
   <MediaWithSpacer name="shrine_evening" />
   <p>
-    俺は、向かって左の隅にある、木製のベンチへ向かい、そこに腰を下ろした。<br>
+    俺は、向かって左隅にある木製のベンチへと向かい、そこに腰を下ろした。<br>
     手提げの中を覗き込んだが、やはり、そこは空っぽである。<br>
     閑寂とした空気の中に風が流れ、手提げに縛られた、色褪せたお守りが細やかに揺れていた。
   </p>
   <StorySpacer innerContents={false} />
   <p>
-    しばらくすると、風は弱くなった。<br>
-    腰を持ち上げ、左手にある賽銭箱へと向かった。<br>
+    しばらくすると風は弱くなり、俺は腰を持ち上げて左手にある賽銭箱へと向かった。
   </p>
   <Spacer templates="low" />
   <p>
@@ -34,11 +33,11 @@ const content = "『待ち人』1日目。最後の参拝者に私が出来る�
   </p>
   <MediaWithSpacer type="audio" name="osaisen" client:load />
   <p>
-    そして、そばにあった本坪鈴から垂れた紐を揺らし、その鈴を鳴らした。
+    そして、そばにあった本坪鈴から垂れた紐を揺らして鈴を鳴らした。
   </p>
   <MediaWithSpacer type="audio" name="bell" client:load />
   <p>
-    後ろを振り向くと、蜜柑色の冷えた空が広がっていた。<br>
+    後ろを振り向けば、蜜柑色の冷えた空が広がっていた。<br>
   </p>
   <MediaWithSpacer name="shrine_torii_evening" />
   <CharacterLine>

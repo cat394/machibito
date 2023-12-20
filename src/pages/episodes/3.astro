@@ -1,12 +1,9 @@
 ---
 import StoryLayout from "../../layouts/StoryLayout.astro";
 import MediaWithSpacer from "../../components/media/MediaWithSpacer.svelte";
-import GuideButton from "../../components/guideButton/GuideButton.svelte";
 import DayThreeAfter from "../../components/dayThreeAfter/DayThreeAfter.svelte";
 import Spacer from "../../components/spacer/Spacer.svelte";
-import GuideLinkButton from "../../components/linkButton/GuideLinkButton.svelte";
 import StoryGuideLinkButton from "../../components/linkButton/StoryGuideLinkButton.svelte";
-import StorySpacer from "../../components/storySpacer/StorySpacer.svelte";
 import ScriptScroll from "../../components/script/ScriptScroll.svelte";
 import CharacterLine from "../../components/characterLine/CharacterLine.svelte";
 
@@ -24,7 +21,7 @@ const content = "『待ち人』3日目。私は彼らに対し、私自身が�
     そうして、石階段の前で立ち止まった。
   </p>
   <p>
-    今日だって俺は目を背けてしまうのだろう、何を話せばいいのだろうか。
+    今日だって俺は目を背けてしまうのだろう、何を話せるというのか。
   </p>
   <p>
     恐る恐る一段ずつ登っていく。
@@ -54,11 +51,9 @@ const content = "『待ち人』3日目。私は彼らに対し、私自身が�
   <CharacterLine name="girl">
     「あなたの待ち人はどなたでしょうか。」
   </CharacterLine>
-  <p>
-    それはあまりに鋭く痛かったが、求めていた問いでもあった。
-  </p>
+  <Spacer templates="low" />
   <CharacterLine>
-    「それに答えるために、少し時間をもらえないだろうか。」
+    「・・・、それに答えるために、少し時間をもらえないだろうか。」
   </CharacterLine>
   <p>
     彼女は幾ばくかの沈黙の後、見透かしたかのように優しく応えた。
@@ -67,7 +62,7 @@ const content = "『待ち人』3日目。私は彼らに対し、私自身が�
     「分かりました。」
   </CharacterLine>
   <p>
-    それを聞くと、俺は目を瞑り、あの日へと意識を遡らせた。
+    それを聞くと、俺は瞼を閉じて、あの日へと意識を遡らせた。
   </p>
   <Spacer />
   <StoryGuideLinkButton to="/episodes/0">記憶を辿る</StoryGuideLinkButton>

@@ -1,7 +1,7 @@
 <script lang="ts">
   import StoryNavigationButton from "./StoryNavigationButton.svelte";
   
-  export let episode: number | undefined;
+  export let episode: number;
 
   let episodesPath = "/episodes/";
 </script>
@@ -10,7 +10,7 @@
 <nav
   class="absolute bottom-0 left-0 w-full grid grid-cols-[repeat(3,minmax(max-content,1fr))] bg-[black] border-t border-neutral-500"
 >
-  {#if episode === 1}
+  {#if episode === 0 || episode === 1}
   <div></div>
   {:else}
   <StoryNavigationButton
