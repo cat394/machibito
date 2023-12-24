@@ -1,15 +1,11 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import Spacer from "../spacer/Spacer.svelte";
-  import Textarea from "../form/Textarea.svelte";
   import CharacterLine from "../characterLine/CharacterLine.svelte";
 
   let show = false;
-  let endElement: HTMLDivElement;
 
-  onMount(async() => {
-    const zeroDaySaw = window.localStorage.getItem("zeroDaySaw");
-    const scrolled = localStorage.getItem("scrolled");
+  onMount(() => {
+    const zeroDaySaw = localStorage.getItem("zeroDaySaw");
 
     if (zeroDaySaw) {
       show = true;

@@ -4,8 +4,6 @@
   onMount(async() => {
     const zeroDaySaw = localStorage.getItem("zeroDaySaw");
     const scrolled = localStorage.getItem("scrolled");
-
-    
   
     if (zeroDaySaw && !scrolled) {
       await new Promise<void>(resolve => setTimeout(resolve, 1000))
